@@ -45,7 +45,11 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
+            this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
+            this.ribbonControl1.ShowItemCaptionsInCaptionBar = true;
+            this.ribbonControl1.ShowToolbarCustomizeItem = false;
             this.ribbonControl1.Size = new System.Drawing.Size(862, 158);
+            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             // 
             // ribbonPage1
             // 
@@ -67,7 +71,9 @@
             this.Controls.Add(this.ribbonControl1);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl1;
-            this.Text = "Form1";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "آزمون گیر";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
