@@ -17,6 +17,10 @@ namespace Azmongir
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            BonusSkins.Register();
+            SkinManager.EnableFormSkins();
+            if(!System.IO.Directory.Exists(AppSetting.fileName))
+            System.IO.Directory.CreateDirectory(AppSetting.fileName);
             Application.Run(new Form1());
         }
     }
