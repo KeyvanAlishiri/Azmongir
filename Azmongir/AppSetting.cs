@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -11,6 +12,11 @@ namespace Azmongir
     public class AppSetting
     {
         public static string fileName = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\" + Assembly.GetExecutingAssembly().GetName().Name;
+
+        #region
+        public static string SkinName = "Skin";
+
+        #endregion
         public static string ReadSettings(string key)
         {
             string result =string.Empty;
