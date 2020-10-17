@@ -25,7 +25,7 @@ namespace Azmongir
                 var appSettings = ConfigurationManager.AppSettings;
                 result = appSettings[key] ?? "0";
             }
-            catch (ConfigurationErrorsException ex)
+            catch (ConfigurationErrorsException)
             {
 
                 result = "Error Setting App Setting";

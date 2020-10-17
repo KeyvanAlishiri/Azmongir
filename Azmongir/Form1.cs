@@ -31,7 +31,7 @@ namespace Azmongir
 
             DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(skinRibbonGalleryBarItem1, true, true);
             skinRibbonGalleryBarItem1.GalleryItemClick += new GalleryItemClickEventHandler(skinRibbonGalleryBarItem1_GalleryItemClick);
-            if(settings[AppSetting.SkinName] != "0")
+            if(settings[AppSetting.SkinName].ToString() != "0")
             {
                 DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle(settings[AppSetting.SkinName].ToString());
             }
